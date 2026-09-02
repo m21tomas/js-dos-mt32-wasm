@@ -1,0 +1,28 @@
+{
+  "name": "js-dos-mt32-wasm",
+  "version": "1.0.0",
+  "description": "Standalone WebAssembly Roland MT-32 emulation engine for js-dos and Web Audio API",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build:cpp": "cd csrc && bash build.sh",
+    "build:ts": "tsc",
+    "build": "npm run build:cpp && npm run build:ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "js-dos",
+    "dosbox",
+    "roland",
+    "mt32",
+    "mt32emu",
+    "wasm",
+    "web-audio",
+    "midi"
+  ],
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
