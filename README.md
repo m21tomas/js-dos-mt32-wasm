@@ -13,7 +13,7 @@ A standalone WebAssembly (WASM) build of **munt (mt32emu)** for browser-based Ro
 
 ### Installation
 
-`npm install js-dos-mt32-wasm`
+`npm install git+https://github.com/m21tomas/js-dos-mt32-wasm.git`
 
 ### ROM Requirements
 
