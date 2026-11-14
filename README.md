@@ -75,19 +75,6 @@ For host environments like `js-dos` or direct C++ / Emscripten wrappers, the und
 | `mt32_render_audio` | `outInterleavedPtr`, `frames` | Renders 16-bit PCM stereo audio into memory. |
 | `mt32_free` | None | Disposes of engine instances and frees allocated memory. |
 
-## Integration with `js-dos` (MPU-401 Port `0x330`)
-
-To hook this module into `js-dos` (DOSBox C++ engine):
-
-1. Intercept write events to MPU-401 data/command registers (`0x330` / `0x331`).
-2. Pass raw MIDI bytes or SysEx buffers directly to `mt32_send_midi` / `mt32_send_sysex`.
-3. Route rendered PCM stereo buffers from `mt32_render_audio` into the host Web Audio `AudioWorkletNode`.
-
 ## License
 
 This project is licensed under the GPL-3.0 License - see the LICENSE file for details.
-
-## Acknowledgments
-
-* **munt (mt32emu):** The underlying Roland MT-32 emulation engine developed by the Munt Team.
-* **js-dos:** Alexandr Guryanov and the `js-dos` / `dos.zone` community for pioneering DOS emulation in WebAssembly.
