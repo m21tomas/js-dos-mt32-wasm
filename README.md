@@ -1,6 +1,6 @@
 # js-dos-mt32-wasm
 
-A standalone WebAssembly (WASM) build of **munt (mt32emu)** for browser-based Roland MT-32 synthesis, tailored for `js-dos` integration and standalone Web Audio projects.
+A standalone WebAssembly (WASM) build of **munt (mt32emu)** for browser-based Roland MT-32 synthesis, tailored for standalone Web Audio projects.
 
 ## Features
 
